@@ -42,9 +42,8 @@ const findMajorityII = (arr: number[]) => {
             secondCount++;
         }
     }
-    
 
-    let res = [];
+    let res: number[] = [];
     if (firstCount > arr.length / 3) {
         res.push(firstCand);
     }
