@@ -1,6 +1,33 @@
-const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+const VOWELS = new Set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']);
 
+// Two pointers, Easy
+// Time: O(n)
+// Space: O(n)
 function reverseVowels(s: string): string {
+    const strArr = s.split('');
+    let left = 0;
+    let right = s.length - 1;
+
+    while (left < right) {
+        if (!VOWELS.has(strArr[left])) left++;
+        else if (!VOWELS.has(strArr[right])) right--;
+        else {
+            strArr[left] = s[right];
+            strArr[right] = s[left];
+            left++;
+            right--;
+        }
+    }
+
+    return strArr.join('');
+};
+
+
+
+// Old solution
+function reverseVowelsOld(s: string): string {
+    const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+
     // O(n)
     // const vowelsIndexes = []
     // let vowelsList = []
