@@ -12,12 +12,14 @@
  * }
  */
 
-// DFS recursive
+// DFS recursive, Easy
+// Time: O(n)
+// Space: O(n)
 function maxDepth(root: TreeNode | null): number {
     if (!root) return 0;
 
-    const leftDepth =  maxDepth(root.left);
-    const rightDepth =  maxDepth(root.right);
+    const leftDepth = maxDepth(root.left);
+    const rightDepth = maxDepth(root.right);
 
     return Math.max(rightDepth, leftDepth) + 1;
 };
