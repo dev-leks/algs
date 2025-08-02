@@ -11,13 +11,13 @@
  */
 
 // Linked list, 2 pointers, Medium (With help)
-// Time: o(n)
+// Time: O(n)
 // Space: O(1)
 function oddEvenList(head: ListNode | null): ListNode | null {
     if (!head || !head.next) return head;
 
-    let odd = head;
-    let even = head.next;
+    let odd: ListNode | null = head;
+    let even: ListNode | null = head.next;
     const evenHead = even;
    
     while (even && even.next) {
@@ -40,17 +40,17 @@ function oddEvenList1(head: ListNode | null): ListNode | null {
     if (!head || !head.next) return head;
 
     let count = 0;
-    let tempHead = head;
+    let tempHead: ListNode | null = head;
     while (tempHead) {
         count++;
         tempHead = tempHead.next;
     }
 
-    let originalHead = head;
-    let originalSecondNode = head.next;
+    let originalHead: ListNode | null = head;
+    let originalSecondNode: ListNode | null = head.next;
 
     while (head) {
-        const nextNode = head.next;
+        const nextNode: ListNode | null = head.next;
        
         if (!nextNode) head.next = count % 2 == 0 ? null : originalSecondNode;
         else if (!nextNode.next) head.next = count % 2 == 0 ? originalSecondNode : null;

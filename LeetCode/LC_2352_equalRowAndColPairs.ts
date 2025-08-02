@@ -1,4 +1,4 @@
-// Array, Hashmap, Medium (Optimized)
+// Array, Hash table, Medium (Optimized)
 // Time: O(n^2)
 // Space: O(n)
 function equalPairs(grid: number[][]): number {
@@ -25,7 +25,7 @@ function equalPairs(grid: number[][]): number {
     return pairsCount;
 };
 
-// Array, Hashmap, Medium (my first solution)
+// Array, Hash table, Medium (my first solution)
 // Time: O(n^2)
 // Space: O(n^2)
 function equalPairs1(grid: number[][]): number {
@@ -51,7 +51,7 @@ function equalPairs1(grid: number[][]): number {
     return pairsCount;
 };
 
-// Array, Hashmap, Medium (Optimized with help)
+// Array, Hash table, Medium (Optimized with help)
 // Time: O(n^2)
 // Space: O(n^2)
 function equalPairs2(grid: number[][]): number {

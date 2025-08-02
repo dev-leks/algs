@@ -1,3 +1,6 @@
+// Two pointers, Easy
+// Time: O(n + m)
+// Space: O(n + m)
 function mergeAlternately(word1: string, word2: string): string {
     let res = ''
     let p1 = 0

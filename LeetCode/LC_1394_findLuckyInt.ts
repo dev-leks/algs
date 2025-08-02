@@ -1,4 +1,6 @@
-// Easy O(n)
+// Hash table, Easy
+// Time: O(n)
+// Space: O(n)
 function findLucky(arr: number[]): number {
     const frequencyMap = new Map();
 

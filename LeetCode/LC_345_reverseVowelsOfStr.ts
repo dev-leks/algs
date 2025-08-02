@@ -26,7 +26,7 @@ function reverseVowels(s: string): string {
 
 // Old solution
 function reverseVowelsOld(s: string): string {
-    const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    const vowelsArr = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
 
     // O(n)
     // const vowelsIndexes = []
@@ -61,18 +61,18 @@ function reverseVowelsOld(s: string): string {
 
     // O(n)
     while (leftP < rightP) {
-        if (vowels.includes(s[leftP]) && vowels.includes(s[rightP])) {
+        if (vowelsArr.includes(s[leftP]) && vowelsArr.includes(s[rightP])) {
             res[leftP] = s[rightP]
             res[rightP] = s[leftP]
             leftP++
             rightP--
         }
 
-        if (!vowels.includes(s[leftP])) {
+        if (!vowelsArr.includes(s[leftP])) {
             leftP++
         }
 
-        if (!vowels.includes(s[rightP])) {
+        if (!vowelsArr.includes(s[rightP])) {
             rightP--
         }
     }

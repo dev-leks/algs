@@ -1,4 +1,4 @@
-// Easy
+// Two pointers, Easy
 // Time: O(t.length)
 // Space: O(1)
 function isSubsequence(s: string, t: string): boolean {
