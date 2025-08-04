@@ -52,14 +52,8 @@ function leafSimilar1(root1: TreeNode | null, root2: TreeNode | null): boolean {
         if (!root) return;
 
         if (!root.left && !root.right) {
-            if (!isQueueFull) {
-                queue.push(root.val);
-            } else {
-                if (queue[0] === root.val) queue.shift();
-                else queue.push(root.val);
-            }
-            
-            return true;
+            if (isQueueFull && queue[0] === root.val) queue.shift();
+            else queue.push(root.val);
         }
 
         dfs(root.left, isQueueFull);
