@@ -12,7 +12,7 @@
  * }
  */
 
-// DFS, Easy (With little help)
+// DFS for BST, Easy (With little help)
 // Time: O(n)
 // Space: O(n)
 function deleteNode(root: TreeNode | null, key: number): TreeNode | null {

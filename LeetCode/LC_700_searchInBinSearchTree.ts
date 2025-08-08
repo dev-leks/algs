@@ -12,7 +12,7 @@
  * }
  */
 
-// DFS, Easy (With little help)
+// DFS for BST, Easy (With little help)
 // Time: O(n)
 // Space: O(n)
 function searchBST(root: TreeNode | null, val: number): TreeNode | null {
