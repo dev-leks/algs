@@ -53,12 +53,12 @@ class MinHeap {
     }
 
     private bubbleDown(): void {
-        let index = 0;
-        let minIndex = index;
+        let smallest = 0;
+        let minIndex = smallest;
         const n = this.heap.length;
 
-        while (index < n) {
-            const left = 2 * index + 1;
+        while (smallest < n) {
+            const left = 2 * smallest + 1;
             const right = left + 1;
             const isLeftSmaller = left < n && this.heap[left].priority < this.heap[minIndex].priority;
             const isRightSmaller = right < n && this.heap[right].priority < this.heap[minIndex].priority;
@@ -68,10 +68,10 @@ class MinHeap {
                 else minIndex = left;
             }
 
-            if (minIndex === index) break;
+            if (minIndex === smallest) break;
 
-            [this.heap[minIndex], this.heap[index]] = [this.heap[index], this.heap[minIndex]];
-            index = minIndex;
+            [this.heap[minIndex], this.heap[smallest]] = [this.heap[smallest], this.heap[minIndex]];
+            smallest = minIndex;
         }
     }
 }
