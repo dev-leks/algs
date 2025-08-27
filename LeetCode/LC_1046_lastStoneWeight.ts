@@ -1,3 +1,5 @@
+import { MaxPriorityQueue } from "@datastructures-js/priority-queue";
+
 // Heap, Easy
 // Time: O(nlogn)
 // Space: O(n)
@@ -5,8 +7,8 @@ function lastStoneWeight(stones: number[]): number {
     const heap = MaxPriorityQueue.fromArray(stones);
 
     while (heap.size() > 1) {
-        const first = heap.dequeue();
-        const second = heap.dequeue();
+        const first = heap.dequeue()!;
+        const second = heap.dequeue()!;
 
         if (first !== second) {
             heap.enqueue(first - second);

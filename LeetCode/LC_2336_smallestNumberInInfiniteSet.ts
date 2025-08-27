@@ -1,3 +1,5 @@
+import { MinPriorityQueue } from "@datastructures-js/priority-queue";
+
 // Heap for added back only, Medium (ChatGPT solution)
 // Time: O(logn) for methods
 // Space: O(k), k - max number of added-back elements 
@@ -86,7 +88,7 @@ class SmallestInfiniteSet0 {
     popSmallest(): number {
         if (!this.heap.size()) return this.current++;
 
-        const min = this.heap.dequeue();
+        const min = this.heap.dequeue()!;
         this.addedBack.delete(min);
 
         return min;
