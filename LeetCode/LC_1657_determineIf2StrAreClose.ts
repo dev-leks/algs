@@ -1,4 +1,4 @@
-// Hash Table, Medium (Without sorting, but with third map)
+// Hash table, Medium (Without sorting, but with third map)
 // Time: O(n + k)
 // Space: O(k), k - number of unique characters
 function closeStrings(word1: string, word2: string): boolean {
@@ -31,7 +31,7 @@ function closeStrings(word1: string, word2: string): boolean {
     return !frequenciesCountMap.size;
 };
 
-// Hash Table, Medium (My first solution with sorting)
+// Hash table, Medium (My first solution with sorting)
 // Time: O(nlogn)
 // Space: O(k), k - number of unique characters
 function closeStrings1(word1: string, word2: string): boolean {
@@ -65,7 +65,7 @@ function closeStrings1(word1: string, word2: string): boolean {
     return true;
 };
 
-// Hash Table, Medium (My first optimized solution with sorting)
+// Hash table, Medium (My first optimized solution with sorting)
 // Time: O(nlogn)
 // Space: O(k), k - number of unique characters
 function closeStrings1_2(word1: string, word2: string): boolean {

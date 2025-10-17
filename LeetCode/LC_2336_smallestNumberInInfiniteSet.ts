@@ -165,7 +165,7 @@ class SmallestInfiniteSet1 {
     }
 }
 
-// Hash Table, Medium (Solution from video without Heap)
+// Hash table, Medium (Solution from video without Heap)
 // Time: addBack - O(1); popSmallest - O(1) amortized, O(k) - worst-case
 // Space: O(m)
 class SmallestInfiniteSet2 {

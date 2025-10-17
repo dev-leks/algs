@@ -25,7 +25,7 @@ function getSumOfDigitsSquares(num: number) {
     return sum;
 }
 
-// Hashmap (Set), Easy (Optimized)
+// Hash table (Set), Easy (Optimized)
 // Time: O((log(n))²)
 // Space: O(log(n))
 function isHappy2(n: number): boolean {
@@ -51,7 +51,7 @@ function isHappy2(n: number): boolean {
     return false;
 };
 
-// Hashmap, Easy (my first solution)
+// Hash table, Easy (my first solution)
 // Time: O((log(n))²)
 // Space: O(log(n))
 function isHappy1(n: number): boolean {
