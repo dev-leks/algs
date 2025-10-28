@@ -10,17 +10,19 @@
  * }
  */
 
+// Linked List, Two pointers (Floyd's Cycle Finding Algorithm), Easy
+// Time: O(n)
+// Space: O(1)
 function middleNode(head: ListNode | null): ListNode | null {
-    if (head === null) return null;
-    if (head.next === null) return head;
+    if (!head || !head.next) return head;
 
-    let slow: ListNode | null = head
-    let fast: ListNode | null = head
+    let slow: ListNode | null = head;
+    let fast: ListNode | null = head;
 
     while (fast?.next) {
-        slow = slow?.next || null
-        fast = fast.next?.next
+        slow = slow!.next;
+        fast = fast.next.next;
     }
    
-    return slow
+    return slow;
 };
