@@ -38,7 +38,7 @@ function minProductSum(nums1: number[], nums2: number[]): number {
 };
 
 // Greedy, Sorting, Medium
-// Time: O(nlogn)
+// Time: O(nlog(n))
 // Space: O(n) - for sorting
 function minProductSum1(nums1: number[], nums2: number[]): number {
   nums1.sort((a, b) => b - a);

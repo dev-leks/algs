@@ -1,5 +1,5 @@
 // Binary Search (Easy)
-// Time Complexity: O(log n)
+// Time Complexity: O(log(n))
 // Space Complexity: O(1)
 function searchInsert(nums: number[], target: number): number {
     let min = 0;

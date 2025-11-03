@@ -1,5 +1,5 @@
 // Binary Search (Easy)
-// Time Complexity: O(n log n)
+// Time Complexity: O(nlog(n))
 // Space Complexity: O(1)
 function missingNumber(nums: number[]): number {
     nums.sort((a, b) => a - b);

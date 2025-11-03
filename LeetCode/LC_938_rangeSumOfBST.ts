@@ -13,8 +13,8 @@
  */
 
 // DFS for BST, Easy
-// Time: worst (skewed) - O(n), best (balanced) - O(logn)
-// Space: worst (skewed) - O(n), best (balanced) - O(logn)
+// Time: worst (skewed) - O(n), best (balanced) - O(log(n))
+// Space: worst (skewed) - O(n), best (balanced) - O(log(n))
 function rangeSumBST(root: TreeNode | null, low: number, high: number): number {
     if (!root) return 0;
 

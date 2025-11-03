@@ -1,6 +1,6 @@
 // Two pointers, Medium
 // Space: O(1)
-// Time: O(n log n), because of the sort
+// Time: O(nlog(n)), because of the sort
 function maxOperationsTP(nums: number[], k: number): number {
     nums.sort((a, b) => a - b);
    

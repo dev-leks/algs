@@ -44,7 +44,7 @@ function increasingKplet(nums: number[], k: number): boolean {
 };
 
 // Array, Medium (Solution from video, naive)
-// Time: O(nlogn), but for k = 3 O(n)
+// Time: O(nlog(n)), but for k = 3 O(n)
 // Space: O(1)
 function increasingTriplet1(nums: number[]): boolean {
     const n = nums.length;

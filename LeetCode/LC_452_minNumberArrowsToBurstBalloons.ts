@@ -1,5 +1,5 @@
 // Intervals (Sorting by ending values + Greedy), Medium
-// Time: O(nlogn)
+// Time: O(nlog(n))
 // Space: O(1)
 function findMinArrowShots(points: number[][]): number {
   points.sort((a, b) => a[1] - b[1]);

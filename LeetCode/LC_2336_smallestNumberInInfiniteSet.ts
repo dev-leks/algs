@@ -1,7 +1,7 @@
 import { MinPriorityQueue } from "@datastructures-js/priority-queue";
 
 // Heap for added back only, Medium (ChatGPT solution)
-// Time: O(logn) for methods
+// Time: O(log(n)) for methods
 // Space: O(k), k - max number of added-back elements 
 class SmallestInfiniteSet {
     current: number;
@@ -72,7 +72,7 @@ class SmallestInfiniteSet {
 }
 
 // Heap (built-in MinPriorityQueue) for added back only, Medium
-// Time: O(logn) for methods
+// Time: O(log(n)) for methods
 // Space: O(k), k - max number of added-back elements 
 class SmallestInfiniteSet0 {
     current: number;
@@ -103,7 +103,7 @@ class SmallestInfiniteSet0 {
 }
 
 // Heap, Medium (My first solution with storing all 1000 elements in heap)
-// Time: O(logn) for methods
+// Time: O(log(n)) for methods
 // Space: O(m), m - number of elements (1000)
 class SmallestInfiniteSet1 {
     heap: number[];

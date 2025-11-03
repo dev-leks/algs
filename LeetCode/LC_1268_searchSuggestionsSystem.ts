@@ -27,7 +27,7 @@ function suggestedProducts(products: string[], searchWord: string): string[][] {
 };
 
 // String + Sorting, Medium (Brute force)
-// Time: O(k*n*logn)+O(m*n*l)
+// Time: O(k*n*log(n))+O(m*n*l)
 // Space: O(m) - output
 function suggestedProducts1(products: string[], searchWord: string): string[][] {
   products.sort();

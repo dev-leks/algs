@@ -1,7 +1,7 @@
 import { MinPriorityQueue } from "@datastructures-js/priority-queue";
 
 // Greedy + Heap, Medium
-// Time: O(nlogn)
+// Time: O(nlog(n))
 // Space: O(n + k)
 function maxScore(nums1: number[], nums2: number[], k: number): number {
     const pairs = nums1.map((num, index) => [num, nums2[index]]);

@@ -1,5 +1,5 @@
 // Intervals (Sorting by ending values + Greedy), Medium (Expected solution)
-// Time: O(nlogn)
+// Time: O(nlog(n))
 // Space: O(1)
 function eraseOverlapIntervals(intervals: number[][]): number {
   intervals.sort((a, b) => a[1] - b[1]);
@@ -21,7 +21,7 @@ function eraseOverlapIntervals(intervals: number[][]): number {
 };
 
 // Intervals (Sorting by ending values + Greedy), Medium (My first solution)
-// Time: O(nlogn)
+// Time: O(nlog(n))
 // Space: O(1)
 function eraseOverlapIntervals1(intervals: number[][]): number {
   intervals.sort((a, b) => a[1] - b[1]);

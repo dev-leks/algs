@@ -1,7 +1,7 @@
 import { MaxPriorityQueue } from "@datastructures-js/priority-queue";
 
 // Heap, Easy
-// Time: O(nlogn)
+// Time: O(nlog(n))
 // Space: O(n)
 function lastStoneWeight(stones: number[]): number {
     const heap = MaxPriorityQueue.fromArray(stones);
@@ -19,7 +19,7 @@ function lastStoneWeight(stones: number[]): number {
 };
 
 // Sorting, Easy
-// Time: O(n^2logn)
+// Time: O(n^2log(n))
 // Space: O(1)
 function lastStoneWeight2(stones: number[]): number {
     stones.sort((a, b) => a - b);

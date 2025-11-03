@@ -1,7 +1,7 @@
 import { MinPriorityQueue } from "@datastructures-js/priority-queue";
 
 // Sorting, Easy (Expected solution)
-// Time: O(nlogn)
+// Time: O(nlog(n))
 // Space: O(n) for output array
 function numberGame(nums: number[]): number[] {
     const n = nums.length;
@@ -20,7 +20,7 @@ function numberGame(nums: number[]): number[] {
 };
 
 // Heap, Easy (My first solution with custom implementation of Heap)
-// Time: O(nlogn)
+// Time: O(nlog(n))
 // Space: O(n) for output array
 function numberGame1(nums: number[]): number[] {
     const n = nums.length;
@@ -76,7 +76,7 @@ function extractMin(arr: number[]) {
 }
 
 // Heap, Easy (With built-in MinPriorityQueue)
-// Time: O(nlogn)
+// Time: O(nlog(n))
 // Space: O(n) for output array
 function numberGame2(nums: number[]): number[] {
     const n = nums.length;

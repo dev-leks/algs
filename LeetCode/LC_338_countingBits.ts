@@ -56,7 +56,7 @@ function countBits2(n: number): number[] {
 };
 
 // Bit manipulation, Easy (My naive solution)
-// Time: O(n*log n)
+// Time: O(nlog(n))
 // Space: O(n)
 function countBits1(n: number): number[] {
   const output: number[] = [0];

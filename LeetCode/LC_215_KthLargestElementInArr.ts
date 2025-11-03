@@ -92,7 +92,7 @@ function findKthLargest1(nums: number[], k: number): number {
 };
 
 // Heap (helpers for MaxHeap), Medium
-// Time: O(n)+O(klog⁡n)
+// Time: O(n)+O(klog(n))
 // Space: O(1)
 function heapifyMax(arr: number[], n: number, i: number) {
     let largest = i;
@@ -141,7 +141,7 @@ function findKthLargest2(nums: number[], k: number): number {
 };
 
 // Heap (helpers for MinHeap), Medium
-// Time: O(n+klog⁡n)
+// Time: O(n+klog(n))
 // Space: O(1)
 function heapify(arr: number[], n: number, i: number) {
     let smallest = i;

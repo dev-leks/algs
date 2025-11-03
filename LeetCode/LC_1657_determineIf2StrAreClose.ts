@@ -32,7 +32,7 @@ function closeStrings(word1: string, word2: string): boolean {
 };
 
 // Hash table, Medium (My first solution with sorting)
-// Time: O(nlogn)
+// Time: O(nlog(n))
 // Space: O(k), k - number of unique characters
 function closeStrings1(word1: string, word2: string): boolean {
     if (word1.length !== word2.length) return false;
@@ -66,7 +66,7 @@ function closeStrings1(word1: string, word2: string): boolean {
 };
 
 // Hash table, Medium (My first optimized solution with sorting)
-// Time: O(nlogn)
+// Time: O(nlog(n))
 // Space: O(k), k - number of unique characters
 function closeStrings1_2(word1: string, word2: string): boolean {
     if (word1.length !== word2.length) return false;

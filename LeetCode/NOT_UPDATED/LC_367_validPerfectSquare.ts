@@ -1,5 +1,5 @@
 // Binary Search (Easy)
-// Time Complexity: O(log n)
+// Time Complexity: O(log(n))
 // Space Complexity: O(1)
 function isPerfectSquare(num: number): boolean {
     let min = 1;

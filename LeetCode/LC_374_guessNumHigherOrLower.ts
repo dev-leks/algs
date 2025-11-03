@@ -8,7 +8,7 @@
  */
 
 // Binary search, Easy
-// Time: O(logn)
+// Time: O(log(n))
 // Space: O(1)
  function guessNumber(n: number): number {
     let left = 1;
