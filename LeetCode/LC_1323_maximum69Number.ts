@@ -6,7 +6,7 @@ function maximum69Number(num: number): number {
   let temp = num;
   let index = 0;
 
-  while(temp) {
+  while (temp) {
     if (Math.floor(temp % 10) === 6) firstSixIndex = index;
     temp = Math.floor(temp / 10);
     index++;
