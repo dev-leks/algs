@@ -10,7 +10,6 @@ function balancedStringSplit(s: string): number {
 
     if (curr === 0) {
       count++;
-      curr = 0;
     }
   }
 
