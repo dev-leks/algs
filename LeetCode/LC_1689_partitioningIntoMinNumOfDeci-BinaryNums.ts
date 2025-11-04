@@ -1,4 +1,4 @@
-// Greedy, Easy (The max digit is the min partition)
+// Greedy, Medium (The max digit is the min partition)
 // Time: O(n)
 // Space: O(1)
 function minPartitions(n: string): number {
