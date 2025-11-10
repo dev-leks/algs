@@ -10,7 +10,7 @@
  * }
  */
 
-// Linked list, 2 pointers, Medium (With help)
+// Linked List, 2 pointers, Medium (With help)
 // Time: O(n)
 // Space: O(1)
 function oddEvenList(head: ListNode | null): ListNode | null {

@@ -36,7 +36,7 @@ function pairSum(head: ListNode | null): number {
     return maxSum;
 };
 
-// Linked list + Stack (My first solution)
+// Linked List + Stack (My first solution)
 // Time: O(n)
 // Space: O(n)
 function pairSum1(head: ListNode | null): number {
@@ -62,7 +62,7 @@ function pairSum1(head: ListNode | null): number {
     return maxSum;
 };
 
-// Linked list + Stack + Two pointers
+// Linked List + Stack + Two pointers
 //  (Optimized solution with slow/fast pointers - from ChatGPT)
 // Time: O(n)
 // Space: O(n)
