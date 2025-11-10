@@ -1,3 +1,4 @@
+/*
 class TreeNode {
      val: number
      left: TreeNode | null
@@ -8,21 +9,28 @@ class TreeNode {
          this.right = (right===undefined ? null : right)
      }
  }
+*/
 
+// DFS, Easy
+// Time: O(n)
+// Space: O(n)
 function diameterOfBinaryTree(root: TreeNode | null): number {
-    let maxDiameter = 0
+  if (!root) return 0;
 
-    function dfs(root: TreeNode | null) {
-        if (!root) return -1
+  let maxDiameter = 0;
 
-        const right = dfs(root.right)
-        const left = dfs(root.left)
-        maxDiameter = Math.max(maxDiameter, 2 + right + left)
+  function dfs(node: TreeNode | null): number {
+    if (!node) return 0;
 
-        return 1 + Math.max(left, right)
-    }
+    const left = dfs(node.left);
+    const right = dfs(node.right);
 
-    dfs(root)
+    maxDiameter = Math.max(maxDiameter, left + right);
 
-    return maxDiameter
+    return Math.max(left, right) + 1;
+  }
+
+  dfs(root);
+
+  return maxDiameter;
 };
