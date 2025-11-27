@@ -74,7 +74,7 @@ class MinHeap {
 }
 
 // Heap (class implementation of MinHeap), Medium
-// Time: O(nlogn)
+// Time: O(nlog(n))
 // Space: O(n)
 function findKthLargest1(nums: number[], k: number): number {
     const heap = new MinHeap();

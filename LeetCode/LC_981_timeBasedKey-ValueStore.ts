@@ -1,7 +1,7 @@
 // Hash table + Binary Search (Upper bound), Medium
-// Time: set - O(M⋅L), get - O(N⋅L⋅logM)
+// Time: set - O(M⋅L), get - O(NLlog(M))
 // - M and N are number of calls, L is length of key to hash
-// Space: set - O(M⋅L), get - O(1)
+// Space: set - O(ML), get - O(1)
 //
 class TimeMap {
   map: Map<string, Array<[number, string]>>;

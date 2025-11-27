@@ -13,7 +13,7 @@ import { PriorityQueue } from "@datastructures-js/priority-queue";
  */
 
 // Divide and Conquer, Linked List, Hard
-// Time: O(N*logk) - N - total nodes, k - number of lists
+// Time: O(Nlog(k)) - N - total nodes, k - number of lists
 // Space: O(1)
 function mergeKLists(lists: Array<ListNode | null>): ListNode | null {
   const n = lists.length;
@@ -51,7 +51,7 @@ function mergeKLists(lists: Array<ListNode | null>): ListNode | null {
 };
 
 // Linked List + Heap, Hard
-// Time: O(N*logK) - N - total nodes, k - number of lists
+// Time: O(Nlog(K)) - N - total nodes, k - number of lists
 // Space: O(n + k) - to create new linked list + heap
 function mergeKLists2(lists: Array<ListNode | null>): ListNode | null {
   const minHeap = new PriorityQueue<ListNode>(
@@ -125,7 +125,7 @@ function mergeKLists1(lists: Array<ListNode | null>): ListNode | null {
 };
 
 // Brute force, Hard
-// Time: O(N*logN)
+// Time: O(Nlog(N)))
 // Space: O(N)
 function mergeKLists0(lists: Array<ListNode | null>): ListNode | null {
   let nodes: number[] = [];

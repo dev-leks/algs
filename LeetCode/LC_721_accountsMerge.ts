@@ -1,6 +1,6 @@
 namespace WithUnionFind {
   // Union Find (Union by Size), Medium (LeetCode solution)
-  // Time: O(NKlogNK) - total (O(NK⋅logNK+NK⋅α(N)))
+  // Time: O(NKlog(NK)) - total (O(NKlog(NK)+NKα(N)))
   // Space: O(NK)
   // N - number of accounts, K - max length of an account
   class UnionFind {
@@ -75,7 +75,7 @@ namespace WithUnionFind {
   };
 
   // Union Find (Union by Rank + Path Compression), Medium
-  // Time: O(KlogK)
+  // Time: O(Klog(K))
   // Space: O(K)
   // K - number of unique emails
   function accountsMerge3(accounts: string[][]): string[][] {
@@ -143,7 +143,7 @@ namespace WithUnionFind {
   };
 
   // Union Find (Union by Rank), Medium
-  // Time: O(KlogK)
+  // Time: O(Klog(K))
   // Space: O(K)
   // K - number of unique emails
   function accountsMerge2(accounts: string[][]): string[][] {
@@ -207,7 +207,7 @@ namespace WithUnionFind {
   };
 
   // Union Find (Path Compression), Medium
-  // Time: O(KlogK)
+  // Time: O(Klog(K))
   // Space: O(K)
   // K - number of unique emails
   function accountsMerge1(accounts: string[][]): string[][] {
@@ -262,7 +262,7 @@ namespace WithUnionFind {
 
 namespace WithDFS {
   // DFS, Medium
-  // Time: O(NKlogNK) - NK - DFS and logN - sorting
+  // Time: O(NKlog(NK)) - NK - DFS and logN - sorting
   // Space: O(NK)
   // N - number of accounts, K - max length of an account
   function accountsMerge(accounts: string[][]): string[][] {
@@ -321,7 +321,7 @@ namespace WithDFS {
   };
 
   // DFS, Medium (My first solution)
-  // Time: O(NKKlognK)
+  // Time: O(NKlog(NK))
   // Space: O(K^2)
   function accountsMerge1(accounts: string[][]): string[][] {
     const output: string[][] = [];
