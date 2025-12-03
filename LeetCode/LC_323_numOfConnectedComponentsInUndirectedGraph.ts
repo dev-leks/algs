@@ -1,3 +1,7 @@
+// Union Find (Union by Size + Path Compression), Medium
+// Time: O(V+E*a(n))
+// Space: O(V)
+// E - number of edges, V - number of vertices, α(n) - inverse Ackermann function
 class UnionFind {
   parent: number[];
   size: number[];
@@ -37,10 +41,6 @@ class UnionFind {
   }
 }
 
-// Union Find (Union by Size + Path Compression), Medium
-// Time: O(V+E*a(n))
-// Space: O(V)
-// E - number of edges, V - number of vertices, α(n) - inverse Ackermann function
 function countComponents(n: number, edges: number[][]): number {
   const uf = new UnionFind(n);
 

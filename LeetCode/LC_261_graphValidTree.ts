@@ -1,4 +1,8 @@
 namespace WithUnionFind {
+  // Union Find (Union by Size + Path Compression), Medium (+Advanced Graph Theory)
+  // Time: O(N*α(N)
+  // Space: O(N)
+  // N - number of nodes, E - number of edges, α(N) - inverse Ackermann function ~= O(1)
   class UnionFind {
     parent: number[];
     size: number[];
@@ -31,10 +35,6 @@ namespace WithUnionFind {
     }
   }
 
-  // Union Find (Union by Size + Path Compression), Medium (+Advanced Graph Theory)
-  // Time: O(N*α(N)
-  // Space: O(N)
-  // N - number of nodes, E - number of edges, α(N) - inverse Ackermann function ~= O(1)
   function validTree(n: number, edges: number[][]): boolean {
     if (edges.length !== n - 1) return false;
 
