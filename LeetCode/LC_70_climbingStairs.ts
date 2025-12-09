@@ -1,4 +1,22 @@
-// Dynamic programming, Easy (Optimized space)
+// Fibonacci number, Easy
+// Time: O(n)
+// Space: O(1)
+function climbStairs2(n: number): number {
+    if (n === 1) return 1;
+
+    let first = 1;
+    let second = 2;
+
+    for (let i = 3; i <= n; i++) {
+        const third = first + second;
+        first = second;
+        second = third;
+    }
+
+    return second;
+};
+
+// Dynamic programming, Easy (Fibonacci number, Optimized space)
 // Time: O(n)
 // Space: O(1)
 function climbStairs(n: number): number {
