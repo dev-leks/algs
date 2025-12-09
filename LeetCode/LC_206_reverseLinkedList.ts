@@ -10,10 +10,26 @@
  * }
  */
 
-// Linked List with Recursion, Easy
+// Linked List, Easy (Iterative)
+// Time: O(n)
+// Space: O(1)
+function reverseList(head: ListNode | null): ListNode | null {
+  let prevNode: ListNode | null = null
+
+  while (head) {
+    const nextNode = head.next
+    head.next = prevNode
+    prevNode = head
+    head = nextNode
+  }
+
+  return prevNode
+};
+
+// Linked List, Easy (Recursive)
 // Time: O(n)
 // Space: O(n)
-function reverseListRecursively(head: ListNode | null): ListNode | null {
+function reverseList1(head: ListNode | null): ListNode | null {
     function reverse(node: ListNode | null, prevNode: ListNode | null): ListNode | null {
         if (!node) return prevNode
 
@@ -24,20 +40,4 @@ function reverseListRecursively(head: ListNode | null): ListNode | null {
     }
 
     return reverse(head, null)
-};
-
-// Linked List, Easy
-// Time: O(n)
-// Space: O(1)
-function reverseListIteratively(head: ListNode | null): ListNode | null {
-    let prevNode: ListNode | null = null
-
-    while (head) {
-        const nextNode = head.next
-        head.next = prevNode
-        prevNode = head
-        head = nextNode
-    }
-
-    return prevNode
 };
