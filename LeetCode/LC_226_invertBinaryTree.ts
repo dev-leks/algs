@@ -9,7 +9,9 @@ class TreeNode {
     }
 }
 
-// Depth-First Search in Tree
+// DFS, Binary Tree, Easy (Recursive)
+// Time: O(n)
+// Space: O(n)
 function invertTree(root: TreeNode | null): TreeNode | null {
     if (!root) return null;
 
@@ -19,3 +21,26 @@ function invertTree(root: TreeNode | null): TreeNode | null {
 
     return root;
 };
+
+// DFS, Binary Tree, Easy (Iterative)
+// Time: O(n)
+// Space: O(n)
+function invertTree2(root: TreeNode | null): TreeNode | null {
+  if (!root) return null;
+
+  const stack = [root];
+
+  while (stack.length) {
+    const node = stack.pop()!;
+
+    const left = node.left;
+    node.left = node.right;
+    node.right = left;
+
+    if (node.left) stack.push(node.left);
+    if (node.right) stack.push(node.right);
+  }
+
+  return root;
+};
+
