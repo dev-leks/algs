@@ -1,7 +1,6 @@
-// 2 stacks approach
-// push/empty - O(1); 
-// pop/peek - amortized O(1). Each element is moved from stackIn to stackOut at most once,
-//  making the amortized cost of each operation O(1)
+// Stack, Easy (Two stacks)
+// Time: O(1) (amortized) for pop, O(1) - for other methods
+// Space: O(n) for push, O(1) for other methods
 class MyQueue {
     private inputStack: number[];
     private outputStack: number[];
@@ -16,30 +15,36 @@ class MyQueue {
     }
 
     pop(): number {
-        this.shiftStacks();
-        return this.outputStack.pop()!;
+        if (!this.outputStack.length) {
+            while (this.inputStack.length) {
+              this.outputStack.push(this.inputStack.pop()!);
+            }
+        }
+
+      return this.outputStack.pop()!;
     }
 
     peek(): number {
-        this.shiftStacks();
-        return this.outputStack[this.outputStack.length - 1];
+        return this.outputStack[this.outputStack.length - 1] ?? this.inputStack[0];
     }
 
     empty(): boolean {
-        return !this.inputStack.length && !this.outputStack.length;
-    }
-
-    private shiftStacks() {
-        if (this.outputStack.length) return;
-
-        while (this.inputStack.length) {
-            this.outputStack.push(this.inputStack.pop()!);
-        }
+       return !this.inputStack.length && !this.outputStack.length;
     }
 }
 
-// Approach with 1 stack and pointer:
-// not cover the task description + has extra elements
+/**
+ * Your MyQueue object will be instantiated and called as such:
+ * var obj = new MyQueue()
+ * obj.push(x)
+ * var param_2 = obj.pop()
+ * var param_3 = obj.peek()
+ * var param_4 = obj.empty()
+ */
+
+// Stack + Pointer, Easy (Not acceptable, not cover the task description + store all elements in the stack)
+// Time: O(1) for each method
+// Space: O(n)
 class MyQueue0 {
     private stack: number[];
     private pointer: number;
