@@ -1,6 +1,6 @@
-// String (Easy)
-// Time Complexity: O(n)
-// Space Complexity: O(n)
+// Hast table, Easy
+// Time: O(n)
+// Space: O(k), k - count of unique characters
 function isAnagram(s: string, t: string): boolean {
     if (s.length !== t.length) return false;
 
