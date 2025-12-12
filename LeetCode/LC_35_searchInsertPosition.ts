@@ -1,6 +1,6 @@
-// Binary Search (Easy)
-// Time Complexity: O(log(n))
-// Space Complexity: O(1)
+// Binary Search, Easy
+// Time: O(log(n))
+// Space: O(1)
 function searchInsert(nums: number[], target: number): number {
     let min = 0;
     let max = nums.length - 1;

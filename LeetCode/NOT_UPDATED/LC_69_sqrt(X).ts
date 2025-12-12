@@ -1,4 +1,4 @@
-// Binary Search (Easy)
+// Binary Search, Easy
 function mySqrt(x: number): number {
     if (x == 1) return 1;
 

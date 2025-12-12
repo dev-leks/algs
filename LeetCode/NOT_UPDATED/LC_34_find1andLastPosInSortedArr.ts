@@ -1,4 +1,4 @@
-// Binary Search (Medium)
+// Binary Search, Medium
 function searchRange(nums: number[], target: number): number[] {
     let min = 0;
     let max = nums.length - 1;
