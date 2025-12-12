@@ -1,7 +1,29 @@
-// Array, Prefix and suffix, Medium (Optimized - from video)
+// Array, Prefix and suffix, Medium (A bit better then below one)
 // Time: O(n)
 // Space: O(1) (output array is not counted)
 function productExceptSelf(nums: number[]): number[] {
+  if (!nums.length) return [];
+
+  const n = nums.length;
+  const answer: number[] = [1];
+
+  for (let i = 1; i < n; i++) {
+    answer.push(answer[i - 1] * nums[i - 1]);
+  }
+
+  let postfix = 1;
+  for (let i = n - 1; i >= 0; i--) {
+    answer[i] *= postfix;
+    postfix *= nums[i];
+  }
+
+  return answer;
+};
+
+// Array, Prefix and suffix, Medium (Optimized - from video)
+// Time: O(n)
+// Space: O(1) (output array is not counted)
+function productExceptSelf3(nums: number[]): number[] {
     const answer: number[] = [];
 
     let prefix = 1;
@@ -22,7 +44,7 @@ function productExceptSelf(nums: number[]): number[] {
 // Array, Prefix and suffix, Medium (My first solution)
 // Time: O(n)
 // Space: O(n)
-function productExceptSelf1(nums: number[]): number[] {
+function productExceptSelf2(nums: number[]): number[] {
     const n = nums.length;
     const prefixes: number[] = [1];
     const postixes: number[] = [];
@@ -36,10 +58,10 @@ function productExceptSelf1(nums: number[]): number[] {
     return nums.map((_, index) => prefixes[index] * postixes[index]);
 };
 
-// Array, Prefix and suffix, Medium (Same as above but from video)
+// Array, Prefix and suffix, Medium (Same as above, but from video)
 // Time: O(n)
 // Space: O(n)
-function productExceptSelf2(nums: number[]): number[] {
+function productExceptSelf1(nums: number[]): number[] {
     const n = nums.length;
     const prefixes: number[] = [];
     const postfixes: number[] = [];
