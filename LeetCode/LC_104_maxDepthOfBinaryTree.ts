@@ -26,7 +26,7 @@ function maxDepth(root: TreeNode | null): number {
 
 // DFS, Easy (Iterative with stack)
 // Time: O(n)
-// Space: O(n), average O(logn)
+// Space: O(n), average O(log(n))
 function maxDepth1(root: TreeNode | null): number {
   if (!root) return 0;
 
