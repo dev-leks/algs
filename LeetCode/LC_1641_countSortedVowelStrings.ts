@@ -23,7 +23,7 @@ function countVowelStrings1(n: number): number {
     return count(n, 0);
 };
 
-// Dynamic programming (bottom-up), Medium (ChatGPT solution)
+// Dynamic programming (Bottom-Up), Medium (ChatGPT solution)
 // Time: O(n)
 // Space: O(n)
 function countVowelStrings2(n: number): number {

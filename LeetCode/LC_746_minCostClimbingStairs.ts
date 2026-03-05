@@ -15,7 +15,7 @@ function minCostClimbingStairs(cost: number[]): number {
     return Math.min(first, second);
 };
 
-// Dynamic Programming (1D), Easy (With LeetCode hints)
+// Dynamic Programming (1D), Easy (Bottom-Up)
 // Time: O(n)
 // Space: O(n)
 function minCostClimbingStairs1(cost: number[]): number {
@@ -31,7 +31,7 @@ function minCostClimbingStairs1(cost: number[]): number {
     return Math.min(dp[0], dp[1]);
 };
 
-// Dynamic Programming (1D), Easy
+// Dynamic Programming (1D), Easy (Bottom-Up)
 // Time: O(n)
 // Space: O(n)
 function minCostClimbingStairs2(cost: number[]): number {

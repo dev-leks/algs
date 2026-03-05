@@ -1,4 +1,4 @@
-// Dynamic programming (Bottom-up, tabulation), Medium
+// Dynamic programming (Bottom-Up, tabulation), Medium
 // Time: O(m*n)
 // Space: O(m*n)
 function longestCommonSubsequence1(text1: string, text2: string): number {
